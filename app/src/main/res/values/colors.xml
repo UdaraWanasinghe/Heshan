@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#00AAF7</color>
+
+
+    <color name="topic_black">#252460</color>
+    <color name="create_one_orange">#FF7250</color>
+    <color name="light_purple">#00AAF7</color>
+    <color name="orange_dark">#B34B32</color>
+</resources>

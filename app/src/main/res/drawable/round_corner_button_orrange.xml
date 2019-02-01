@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="92dp"
+    android:height="43dp"
+    android:viewportWidth="92"
+    android:viewportHeight="43">
+
+    <group
+        android:name="01.-login"
+        android:translateX="-32.000000"
+        android:translateY="-446.000000">
+        <group
+            android:name="button/purple"
+            android:translateX="32.000000"
+            android:translateY="446.000000">
+            <path
+                android:name="Rectangle-2"
+                android:fillColor="#FF7250"
+                android:fillAlpha="0.2"
+                android:fillType="evenOdd"
+                android:strokeAlpha="0.2"
+                android:strokeWidth="1"
+                android:pathData="M 21.5 0 L 70.5 0 Q 92 0 92 21.5 L 92 21.5 Q 92 43 70.5 43 L 21.5 43 Q 0 43 0 21.5 L 0 21.5 Q 0 0 21.5 0 Z" />
+        </group>
+    </group>
+</vector>

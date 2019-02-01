@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="375dp"
+    android:height="667dp"
+    android:viewportWidth="375"
+    android:viewportHeight="667">
+
+    <group
+        android:name="circles"
+        android:translateX="-41.000000"
+        android:translateY="-53.000000">
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 398.5 118 C 430.256373115 118 456 143.743626885 456 175.5 C 456 207.256373115 430.256373115 233 398.5 233 C 366.743626885 233 341 207.256373115 341 175.5 C 341 143.743626885 366.743626885 118 398.5 118 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 268 149 C 277.388840747 149 285 156.611159253 285 166 C 285 175.388840747 277.388840747 183 268 183 C 258.611159253 183 251 175.388840747 251 166 C 251 156.611159253 258.611159253 149 268 149 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 212 617 C 221.388840747 617 229 624.611159253 229 634 C 229 643.388840747 221.388840747 651 212 651 C 202.611159253 651 195 643.388840747 195 634 C 195 624.611159253 202.611159253 617 212 617 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 152.5 567 C 156.642135624 567 160 570.357864376 160 574.5 C 160 578.642135624 156.642135624 582 152.5 582 C 148.357864376 582 145 578.642135624 145 574.5 C 145 570.357864376 148.357864376 567 152.5 567 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 218.5 99 C 222.642135624 99 226 102.357864376 226 106.5 C 226 110.642135624 222.642135624 114 218.5 114 C 214.357864376 114 211 110.642135624 211 106.5 C 211 102.357864376 214.357864376 99 218.5 99 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 354.5 335 C 358.642135624 335 362 338.357864376 362 342.5 C 362 346.642135624 358.642135624 350 354.5 350 C 350.357864376 350 347 346.642135624 347 342.5 C 347 338.357864376 350.357864376 335 354.5 335 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 100.5 0 C 127.838095117 0 150 22.1619048834 150 49.5 C 150 76.8380951166 127.838095117 99 100.5 99 C 73.1619048834 99 51 76.8380951166 51 49.5 C 51 22.1619048834 73.1619048834 0 100.5 0 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 396.5 558 C 423.838095117 558 446 580.161904883 446 607.5 C 446 634.838095117 423.838095117 657 396.5 657 C 369.161904883 657 347 634.838095117 347 607.5 C 347 580.161904883 369.161904883 558 396.5 558 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 27.5 569 C 42.6878306203 569 55 581.31216938 55 596.5 C 55 611.68783062 42.6878306203 624 27.5 624 C 12.3121693797 624 0 611.68783062 0 596.5 C 0 581.31216938 12.3121693797 569 27.5 569 Z" />
+        <path
+            android:name="Oval"
+            android:fillAlpha="0.5"
+            android:fillType="evenOdd"
+            android:strokeColor="#DFDFE4"
+            android:strokeAlpha="0.5"
+            android:strokeWidth="1"
+            android:pathData="M 87.5 708 C 102.68783062 708 115 720.31216938 115 735.5 C 115 750.68783062 102.68783062 763 87.5 763 C 72.3121693797 763 60 750.68783062 60 735.5 C 60 720.31216938 72.3121693797 708 87.5 708 Z" />
+    </group>
+</vector>

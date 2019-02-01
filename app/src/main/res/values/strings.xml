@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project Manegment Tool Android X</string>
+    <string name="fogot_pw">Forgot password</string>
+    <string name="still_without_account">Still without account?  </string>
+    <string name="create_one">Create one</string>
+    <string name="i_already_have_an_account">I already have an account  </string>
+    <string name="login_text">Login</string>
+</resources>
