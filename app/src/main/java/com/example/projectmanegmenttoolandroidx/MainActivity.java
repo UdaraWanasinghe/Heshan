@@ -2,6 +2,7 @@ package com.example.projectmanegmenttoolandroidx;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
+        final ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setMessage("Logging you in...");
+        dialog.show();
         try {
             final DataRequest request = new DataRequest(
                     this,
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
+                            dialog.dismiss();
                             if (request.statusCode == 200) {
                                 goTo(Home.class);
                             } else {
@@ -71,12 +76,14 @@ public class MainActivity extends AppCompatActivity {
                     new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
+                            dialog.dismiss();
                             error.printStackTrace();
                             Toast.makeText(MainActivity.this, new String(error.networkResponse.data), Toast.LENGTH_SHORT).show();
                         }
                     }
             );
         } catch (JSONException e) {
+            dialog.dismiss();
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
         }
     }

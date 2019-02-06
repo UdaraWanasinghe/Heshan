@@ -5,8 +5,8 @@
     android:id="@+id/nestedScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@drawable/main_circle_background">
+    android:background="@drawable/main_circle_background"
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -45,19 +45,50 @@
             app:layout_constraintGuide_percent="0.31" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+            android:id="@+id/textInputLayout1"
             android:layout_width="0dp"
             android:layout_height="52dp"
-
             android:layout_marginTop="8dp"
-
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
             app:layout_constraintTop_toTopOf="@+id/guideline2">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTexFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditText"
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email address" />
@@ -80,38 +111,41 @@
             app:layout_constraintGuide_percent="0.92214113" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
+            android:id="@+id/textInputLayout4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditText2"
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout3"
+            android:id="@+id/textInputLayout5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextRepeatPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Repeat Password" />
         </com.google.android.material.textfield.TextInputLayout>
 
+
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSignUp"
             android:layout_width="wrap_content"
             android:layout_height="33dp"
             android:layout_marginTop="32dp"
@@ -119,10 +153,11 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:text="Sign Up"
+            android:onClick="login"
             android:textAllCaps="false"
             android:textColor="@color/create_one_orange"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
         <TextView
             android:id="@+id/textView2"
@@ -138,10 +173,10 @@
             app:layout_goneMarginTop="8dp" />
 
         <TextView
-            android:onClick="Login"
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="Login"
             android:text="@string/login_text"
             android:textColor="@color/light_purple"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
