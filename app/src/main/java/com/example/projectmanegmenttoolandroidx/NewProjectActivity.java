@@ -39,6 +39,7 @@ public class NewProjectActivity extends AppCompatActivity {
                         new SuccessListener() {
                             @Override
                             public void onSuccess() {
+                                setResult(RESULT_OK);
                                 RequestHandler.showSuccessDialog(NewProjectActivity.this, "Successfully created the project");
                             }
                         }

@@ -6,7 +6,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                             .put("email", editTextEmail.getText().toString())
                             .put("password", editTextPassword.getText().toString())
             );
-            request.sendRequest(
+            request.sendObjectRequest(
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {

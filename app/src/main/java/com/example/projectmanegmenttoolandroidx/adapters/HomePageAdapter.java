@@ -10,6 +10,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class HomePageAdapter extends FragmentPagerAdapter {
+    static Fragment fragment1 = new ProjectFragment();
+    static Fragment fragment2 = new OnGoingFragment();
+    static Fragment fragment3 = new NotificationFragment();
     public HomePageAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
@@ -19,11 +22,11 @@ public class HomePageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new ProjectFragment();
+                return fragment1;
             case 1:
-                return new OnGoingFragment();
+                return fragment2;
             case 2:
-                return new NotificationFragment();
+                return fragment3;
         }
         return new ProjectFragment();
     }

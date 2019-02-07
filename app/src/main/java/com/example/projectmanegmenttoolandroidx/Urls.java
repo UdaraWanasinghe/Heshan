@@ -1,6 +1,6 @@
 package com.example.projectmanegmenttoolandroidx;
 
-class Urls {
+public class Urls {
     // host
     private final static String HOST = "http://192.168.43.195:3000/api/";
 
@@ -12,7 +12,7 @@ class Urls {
 
     // projects
     final static String NEW_PROJECT_URL = HOST + "projects/newproject";
-    final static String GET_BY_EMAIL_URL = HOST + "projects/getByemail";
+    public final static String GET_BY_EMAIL_URL = HOST + "projects/getByemail";
     final static String GET_CATEGORIES_URL = HOST + "projects/getCategories";
     final static String GET_PROJECT_TASKS_URL = HOST + "projects/getProjectTasks";
     final static String NEW_CATEGORY_URL = HOST + "projects/newcategory";

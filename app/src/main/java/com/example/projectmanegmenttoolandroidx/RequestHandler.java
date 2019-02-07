@@ -37,10 +37,10 @@ public class RequestHandler {
                             .put("name", name)
                             .put("description", description)
                             .put("manager", manager)
-                            .put("startDate", startDate)
-                            .put("dueDate", dueDate)
+                            .put("startdate", startDate)
+                            .put("duedate", dueDate)
             );
-            request.sendRequest(
+            request.sendObjectRequest(
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
@@ -74,7 +74,7 @@ public class RequestHandler {
                         public void onErrorResponse(VolleyError error) {
                             dialog.dismiss();
                             error.printStackTrace();
-                            Toast.makeText(context, error.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, new String(error.networkResponse.data), Toast.LENGTH_SHORT).show();
                         }
                     }
             );
@@ -84,7 +84,7 @@ public class RequestHandler {
         }
     }
 
-    static void showErrorDialog(Context context, String message, final RetryListener retryListener) {
+    public static void showErrorDialog(Context context, String message, final RetryListener retryListener) {
         new AlertDialog.Builder(context)
                 .setTitle("Error")
                 .setMessage(message)

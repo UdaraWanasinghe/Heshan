@@ -80,7 +80,7 @@ public class SignUpActivity extends AppCompatActivity {
                             .put("email", editTextEmail.getText().toString())
                             .put("password", editTextPassword.getText().toString())
             );
-            request.sendRequest(
+            request.sendObjectRequest(
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
