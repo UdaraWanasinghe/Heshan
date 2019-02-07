@@ -1,5 +1,7 @@
 package com.example.projectmanegmenttoolandroidx.adapters;
 
+import com.example.projectmanegmenttoolandroidx.mainThreeFragments.NotificationFragment;
+import com.example.projectmanegmenttoolandroidx.mainThreeFragments.OnGoingFragment;
 import com.example.projectmanegmenttoolandroidx.mainThreeFragments.ProjectFragment;
 
 import androidx.annotation.NonNull;
@@ -18,12 +20,11 @@ public class HomePageAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return new ProjectFragment();
-//            case 1:
-//                return new OnGoingFragment();
-//            case 2:
-//                return new NotificationFragment();
+            case 1:
+                return new OnGoingFragment();
+            case 2:
+                return new NotificationFragment();
         }
-        //todo:testing--remove this after making all fragments correctly
         return new ProjectFragment();
     }
 

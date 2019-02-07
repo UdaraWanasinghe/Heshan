@@ -3,14 +3,19 @@ package com.example.projectmanegmenttoolandroidx;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.projectmanegmenttoolandroidx.adapters.HomePageAdapter;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 public class Home extends AppCompatActivity {
     private ViewPager mViewPager;
     TabLayout tabs;
+    FloatingActionButton floatingActionButton;
+
     private HomePageAdapter homePageAdapter;
     private int[] tabIcons = {
             R.drawable.ic_launcher_background,
@@ -26,18 +31,17 @@ public class Home extends AppCompatActivity {
         mViewPager = findViewById(R.id.pager);
         tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(mViewPager);
+        floatingActionButton = findViewById(R.id.fabAddProject);
 
         homePageAdapter = new HomePageAdapter(getSupportFragmentManager());
         mViewPager = findViewById(R.id.pager);
         mViewPager.setAdapter(homePageAdapter);
         setupTabIcons();
 
-
         tabs.addOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                int tab_position = tab.getPosition();
-    //todo:set name to action bar according to tab
+                mViewPager.setCurrentItem(tab.getPosition());
             }
 
             @Override
@@ -48,6 +52,12 @@ public class Home extends AppCompatActivity {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
+            }
+        });
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, NewProjectActivity.class));
             }
         });
     }

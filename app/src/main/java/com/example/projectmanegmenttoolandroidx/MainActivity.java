@@ -68,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
                             dialog.dismiss();
                             if (request.statusCode == 200) {
                                 goTo(Home.class);
+                                getSharedPreferences(Constants.SHARED_PREFERENCES, MODE_PRIVATE).edit()
+                                        .putString(Constants.P_EMAIL, editTextEmail.getText().toString())
+                                        .apply();
                             } else {
                                 Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
                             }
